@@ -1,0 +1,7 @@
+Slashing,5
+Biting,3
+Stabbing,4
+Kicking,2
+Burning,3
+Poison,2
+Magical,4

@@ -1,0 +1,5 @@
+[DONE] 1. Character Creation at start of game instead of each fight
+2. client
+3. server
+4. Exploration
+5. Saved games & load on reconnect

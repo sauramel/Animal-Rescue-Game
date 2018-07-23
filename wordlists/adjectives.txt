@@ -1,0 +1,10 @@
+barren
+hot
+cold
+frozen
+grassy
+sunny
+cloudy
+wet
+sandy
+enchanted

@@ -1,0 +1,11 @@
+##### GLOBAL DATA FORMAT:
+# 2 bytes for data length
+# N bytes for encoded data
+
+Packet types:
+ HAND: Handshake
+   (contains client ID)
+ GOODBYE: Signify end of communication stream
+   (contains enemy name and health)
+ P: Begin PVP encounter
+   (contains enemy player name/ID and health)

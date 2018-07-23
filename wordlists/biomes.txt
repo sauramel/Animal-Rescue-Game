@@ -1,0 +1,10 @@
+desert
+ocean
+beach
+grasslands
+canyon
+mountain
+rainforest
+taiga
+forest
+savanna

@@ -1,0 +1,15 @@
+Blacksmith
+Bakery
+Fine Merchandise
+Sketchy Wares
+Shop
+Black Market Goods
+Trade Wagon
+Hardware Store
+Software Store
+Dwelling
+Legitimate Business
+Illegitimate Business
+Store
+Supplies
+Goods
