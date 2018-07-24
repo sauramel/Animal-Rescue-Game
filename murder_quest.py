@@ -10,6 +10,7 @@ import time
 print('Loading')
 print_loading_dots(0.07, 20, 1)
 
+
 ##############################################################################################################
 
 def getRandomLinefile(name):
@@ -207,7 +208,7 @@ while True:
         else:
             print('You need to be at a shop to perform that action.')
 
-    elif slection == 404:
+    elif selection == 404:
         Print('WE SHOULD FIGURE OUT A DEATH CONDITION...')
 
     elif selection == -69:
