@@ -161,15 +161,19 @@ while True:
     print('\n 1. to fight \n 2. to check your balance: \n 3. to travel')
     if player.location.shop:
         print(' 4. to Access the Shop')
+        print(' 5. to Heal Fully')
     selection = int(input('Input Selection: '))
     print('\n\n\n')
 
     if selection == 1:
-        encounter_result = fight.main()
-        if encounter_result:
-            print("probably won")
+        if player.location.shop:
+            print('There is nothing to fight here...')
         else:
-            print("probably not")
+            encounter_result = fight.main()
+            if encounter_result:
+                print("probably won")
+            else:
+                print("probably not")
 
     elif selection == 2:
         print('Your Gold = ', player.p_gold)
@@ -189,6 +193,12 @@ while True:
             else:
                 shop.try_buyitem(shop_input, player)
                 print("\n ### You are in {} ###".format(shop.name))
+
+    elif selection == 5:
+        if player.location.shop:
+            player.p_health = 500
+        else:
+            print('You need to be at a shop to perform that action.')
 
     elif selection == -69:
         print_properties(player)
