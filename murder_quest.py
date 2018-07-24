@@ -22,7 +22,7 @@ def generatename():
     return name
 
 def randomenemy():
-    health = random.randint(200,500)
+    health = random.randint(50,300)
     name = generatename()
     return health, name
 character = 0

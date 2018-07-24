@@ -251,9 +251,9 @@ class Encounter:
                 damage = 15
                 damagetype = random.randint(1,10)
                 if damagetype > 7:
-                    damage = random.randint(50,70)
+                    damage = random.randint(40,60)
                 else:
-                    damage = random.randint(10,40)
+                    damage = random.randint(10,30)
                 damage = damage - ((agility * 2) * damage) / 100
                 damage_type = getRandomLineWeighted("wordlists/damagetypes.txt")
                 print('The ',self.name,' Deals ',damage, damagetype,' Damage')
