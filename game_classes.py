@@ -130,7 +130,7 @@ class DataPacket:
         self.data = data
 
 class Player:
-    def __init__(self, name="BUGGED", location=None, stats_entry=None):
+    def __init__(self, name="BUGGED", location=None, stats_entry=None, p_health=500):
         if stats_entry:
             (self.p_stre, self.p_accu, self.p_agil,
             self.cheater, self.name) = stats_entry
@@ -143,7 +143,7 @@ class Player:
 
         self.p_dbonus = 0
         self.p_gold   = 0
-        self.p_health = 500
+        self.p_health = p_health
         self.p_exp = 0
         self.p_level = 0
         self.location = location
