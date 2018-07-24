@@ -97,7 +97,7 @@ class Shop:
     def print_wares(self):
         print("0: Leave shop\n")
         for i,item in enumerate(self.items): #0-indexed displayed as 1-indexed
-            print("{}: {} - {}g".format(i+1, item.name, item.price))
+            print("{}: +{} {} - {}g".format(i+1,item.dmod item.name, item.price))
     def generate_items():
         return [Item() for i in range(random.randint(4,9))]
     def try_buyitem(self, item_id, player):

@@ -17,4 +17,5 @@ Gun
 Compound bow
 Bottle
 Toothpick
-
+Cat
+Laptop

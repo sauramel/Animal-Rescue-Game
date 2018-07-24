@@ -22,3 +22,10 @@ Wooden
 Metal
 Rubber
 Slimy
+Salty
+Squishy
+Steel
+Copper
+Bronze
+Ugly
+Silly
