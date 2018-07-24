@@ -164,7 +164,9 @@ while True:
         print(' 5. to Heal Fully')
     selection = int(input('Input Selection: '))
     print('\n\n\n')
-
+    if player.p_health < 1:
+        print('YOU CANT DO THAT BECAUSE YOU DIED')
+        selection = 404
     if selection == 1:
         if player.location.shop:
             print('There is nothing to fight here...')
@@ -204,6 +206,9 @@ while True:
             player.p_health = 500
         else:
             print('You need to be at a shop to perform that action.')
+
+    elif slection == 404:
+        False
 
     elif selection == -69:
         print_properties(player)
