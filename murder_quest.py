@@ -139,7 +139,7 @@ if multi:
 #################### SINGLEPLAYER ####################
 
 # Generate the map
-map = Map(size_x = 5, size_y = 5)
+map = Map(size_x = 9, size_y = 9)
 
 player = Player(stats_entry = assignpoints())
 location = random.choice(map.locations)
