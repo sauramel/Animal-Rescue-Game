@@ -143,7 +143,7 @@ class Player:
 
         self.p_dbonus = 0
         self.p_gold   = 0
-        self.p_health = self.p_health
+        self.p_health = p_health
         self.p_exp = 0
         self.p_level = 0
         self.location = location
