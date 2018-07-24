@@ -156,15 +156,24 @@ class Player:
         )
     def trymove(self, direction):
         x, y = self.location.getCoords()
+        encounter = random.randint(1,6)
         direction = direction.lower()
         if direction in [  "n", "north",   "up",  "u"] and self.location.canMove("up"):
             self.location = self.location.map.location_at_coords(x,   y-1)
+            if encounter > 5:
+                fight.main()
         elif direction in ["e", "east",  "right", "r"] and self.location.canMove("right"):
             self.location = self.location.map.location_at_coords(x+1, y  )
+            if encounter > 5:
+                fight.main()
         elif direction in ["s", "south", "down",  "d"] and self.location.canMove("down"):
             self.location = self.location.map.location_at_coords(x,   y+1)
+            if encounter > 5:
+                fight.main()
         elif direction in ["w", "west",  "left",  "l"] and self.location.canMove("left"):
             self.location = self.location.map.location_at_coords(x-1, y  )
+            if encounter > 5:
+                fight.main()
         else:
             print('Trying to move to a location that does not exist')
         print('\n')
