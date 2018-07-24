@@ -30,7 +30,7 @@ class Map:
         empty_row = "O"*self.size_x
         for row in range(self.size_y):
             if y == row:
-                print("O"*x+"X"+"O"*(self.size_x-x-1))
+                print("░"*x+"▓"+"░"*(self.size_x-x-1))
             else:
                 print(empty_row)
 
