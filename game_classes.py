@@ -27,7 +27,7 @@ class Map:
     def xy_to_index(x, y, size_x):
         return y * size_x + x
     def print_map(self, x, y):
-        empty_row = "O"*self.size_x
+        empty_row = "░"*self.size_x
         for row in range(self.size_y):
             if y == row:
                 print("░"*x+"▓"+"░"*(self.size_x-x-1))
