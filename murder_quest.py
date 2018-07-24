@@ -180,7 +180,7 @@ while True:
 
     elif selection == 3:
         randomencounter = random.randint(1,6)
-        if randomencounter > 3:
+        if randomencounter > 4 and not player.location.shop:
             fight.main()
         else:
             player.trymove(input('Which direction? '))
