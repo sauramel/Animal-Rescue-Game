@@ -264,26 +264,25 @@ class Encounter:
             return enemydamage
 
 ####################################################### Encounter #######################################################
-        playerhealth = player.p_health
         enemyhealth = self.e_health
         print('\n\n\n############ You Encountered ', self.name, ' ############')
         print('############ ', self.name, ' Has ', enemyhealth, 'Health Remaining ############\n\n\n')
-        while playerhealth > 0 or enemyhealth > 0:
+        while player.p_health > 0 or enemyhealth > 0:
             won = False
             enemyhealth = enemyhealth - int(playertick())
             print('\n\n\n############ ', self.name, ' Has ', enemyhealth, 'Health remaining ############')
 
             print_loading_dots(0.4)
 
-            playerhealth = playerhealth - int(enemytock()) - player.cheater
-            print('\n\n\n############', player.name, 'Has', playerhealth, 'Health remaining ############')
-            if playerhealth < 0:
+            player.p_health = player.p_health - int(enemytock()) - player.cheater
+            print('\n\n\n############', player.name, 'Has', player.p_health, 'Health remaining ############')
+            if player.p_health < 0:
                 print('\n\n\nGAME OVER')
                 if player.cheater > 0:
                     print('YOU NORTY BOI YOU CHEATED AT MY GAME')
                 print('You Lost',round(player.p_gold * 0.95), 'Gold')
                 player.p_gold = round(player.p_gold * 0.95)
-                player.p_health = playerhealth
+                player.p_health = player.p_health
                 won = False
                 return won
 
