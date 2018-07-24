@@ -277,7 +277,7 @@ class Encounter:
             player.p_health = player.p_health - int(enemytock()) - player.cheater
             print('\n\n\n############', player.name, 'Has', player.p_health, 'Health remaining ############')
             if player.p_health < 0:
-                print('\n\n\nGAME OVER')
+                print('\n\n\nYou were knocked unconcious')
                 if player.cheater > 0:
                     print('YOU NORTY BOI YOU CHEATED AT MY GAME')
                 print('You Lost',round(player.p_gold * 0.95), 'Gold')

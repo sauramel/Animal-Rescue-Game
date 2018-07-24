@@ -208,7 +208,7 @@ while True:
             print('You need to be at a shop to perform that action.')
 
     elif slection == 404:
-        False
+        Print('WE SHOULD FIGURE OUT A DEATH CONDITION...')
 
     elif selection == -69:
         print_properties(player)
