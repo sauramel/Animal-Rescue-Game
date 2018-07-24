@@ -179,7 +179,11 @@ while True:
         print('Your Gold = ', player.p_gold)
 
     elif selection == 3:
-        player.trymove(input('Which direction? '))
+        randomencounter = random.randint(1,6)
+        if randomencounter > 5:
+            fight.main()
+        else:
+            player.trymove(input('Which direction? '))
 
     elif selection == 4:
         shop = player.location.shop
