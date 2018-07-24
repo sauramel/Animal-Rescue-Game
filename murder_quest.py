@@ -140,7 +140,7 @@ if multi:
 #################### SINGLEPLAYER ####################
 
 # Generate the map
-map = Map(size_x = 9, size_y = 9)
+map = Map(size_x = 15, size_y = 9)
 
 player = Player(stats_entry = assignpoints())
 location = random.choice(map.locations)
@@ -209,7 +209,7 @@ while True:
             print('You need to be at a shop to perform that action.')
 
     elif selection == 404:
-        Print('WE SHOULD FIGURE OUT A DEATH CONDITION...')
+        print('WE SHOULD FIGURE OUT A DEATH CONDITION...')
 
     elif selection == -69:
         print_properties(player)
