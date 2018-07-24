@@ -283,13 +283,14 @@ class Encounter:
                     print('YOU NORTY BOI YOU CHEATED AT MY GAME')
                 print('You Lost',round(player.p_gold * 0.95), 'Gold')
                 player.p_gold = round(player.p_gold * 0.95)
+                player.p_health = playerhealth
                 won = False
                 return won
 
             elif enemyhealth <0:
                 print('\n\n\nYOU WIN')
                 print('Yo')
-                player.p_gold = player.p_gold + random.randint(10,50)
+                player.p_gold = player.p_gold + random.randint(10,70)
                 won = True
                 return won
 
