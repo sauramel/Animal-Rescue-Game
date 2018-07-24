@@ -214,7 +214,7 @@ while True:
     elif selection == -69:
         print_properties(player)
 
-    elif selection == -360**13:
+    elif selection == "-360**13":
         player.p_stre = 500
         player.p_agil = 500
         player.p_accu = 500
